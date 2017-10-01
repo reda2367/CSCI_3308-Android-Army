@@ -13,8 +13,8 @@ Project Description:
   
   Vision Statement:
     We strive to create a clear, concise, and user-friendly website that allows Android users as well as companies looking to gain user information to weigh pros-and-cons of updates and see how it will affect their phone. 
+	
  Motivation:
- 
   Our team member James was searching for a new Android phone and was frustrated with how difficult it was to find how different manufacturers updated their phones.  By creating this website, we allow potential Android users to weigh the pros and cons of the updating process for the numerous different Android manufacturers, as well as see how exactly the updating processes work for each. 
   
   Risks:

@@ -30,3 +30,6 @@ Development Method:
 We will use the Agile development method so we can better keep track of our progress, pace ourselves and plan ahead, and make sure we have concrete work to show for it. We will meet in preson no less than once a week and establish plans for ahead.
 
 Collaboration Tools: In additon to our weekly in-person meetings, we will have a Slack channel to facilitate open communication as well as for any question.
+
+Proposed Architecture:
+The web app will be powered using HTML and CSS on the front end, mySQL on the backend to store phone version information, and PHP as an inbetween to display what users have reported, and input data from the form.

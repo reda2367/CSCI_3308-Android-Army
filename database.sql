@@ -23,6 +23,8 @@ insert into manufacturer(id, manufacturer, make, version, OSRelease, security) v
 insert into version(id, name, versionID) values
 (1, 'Lollipop', '5.0'), 
 (2, 'Marshmallow', '6.0'), 
-(3, 'Nougat', '7.0'), 
-(4, 'Oreo', '8.0');
+(3, 'Nougat', '7.0'),
+(4, 'Nougat', '7.1'), 
+(5, 'Oreo', '8.0'),
+(6, 'Oreo', '8.1');
 

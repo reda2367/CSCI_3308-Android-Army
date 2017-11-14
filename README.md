@@ -2,7 +2,7 @@
 
 Repository for Team Android Army's software development group project
 
-Team Name: Android Army
+Team Name: Android Army 
 
 Team Members: Ashley Kim, Adam Ten Hoeve, Neil Nguyen, Remy Dahlke, James Mahon, Emily Childers
 

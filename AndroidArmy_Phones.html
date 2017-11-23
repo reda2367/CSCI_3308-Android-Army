@@ -12,7 +12,6 @@
   </div>
 </head>
 <body>
-
 <h1>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -20,7 +19,7 @@
         <a href="AndroidArmy_About.hmtl">ABOUT</a>
         <a href="AndroidArmy_Phones.html">PHONES</a>
         <a href="AndroidArmy_Submit.html">SUBMIT</a>
-        <a href="AndoridArmy_Contact.html">CONTACT</a>
+        <a href="AndroidArmy_Contact.html">CONTACT</a>
       </div>
 
       <!-- Use any element to open the sidenav -->
@@ -28,6 +27,117 @@
       &#9776;
       </a></span>
 </h1>
+<style>
+.filterDiv {
+  float: center;
+  background-color: #45C555;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 50px;
+  overflow: hidden;
+}
+</style>
+<body>
+<!-- need to add php that connects to data
+<?php
+	
+	$connection = @mysqli_connect(localhost, root, bookekgom, db);
+	/*$query ="SELECT * FROM phone";
+	$result = mysqli_query($connection,$query);
+	
+	echo "<table>
+                <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>qty</th>
+                <th>price</th>
+                <th></th>
+                </tr>";
+
+	while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM))
+	{
+
+		echo "<tr>";
+      	        echo"<td>" .$row[0]."</td><td>".$row[1]."</td><td>".$row[2]."</td><td>".$row[3]."</td><td>".$row[4]."</td><td>".$row[5]."</td>";
+		echo "</tr>";
+
+	}
+
+	echo "</table>";
+	mysql_free_result($result);
+	mysql_close($connection);*/
+	
+?>
+-->
+<h2>Phones</h2>
+
+<h3>
+<input type="radio" onclick="filterSelection('all')" name="category" checked> Show all<br>
+<input type="radio" onclick="filterSelection('cars')" name="category"> Manufacturer<br>
+<input type="radio" onclick="filterSelection('animals')" name="category"> Make <br>
+<input type="radio" onclick="filterSelection('fruits')" name="category"> Version<br>
+
+<div class="container">
+  <div class="filterDiv cars">BMW</div>
+  <div class="filterDiv colors fruits">Orange</div>
+  <div class="filterDiv cars">Volvo</div>
+  <div class="filterDiv colors">Red</div>
+  <div class="filterDiv cars animals">Mustang</div>
+  <div class="filterDiv colors">Blue</div>
+  <div class="filterDiv animals">Cat</div>
+  <div class="filterDiv animals">Dog</div>
+  <div class="filterDiv fruits">Melon</div>
+  <div class="filterDiv fruits animals">Kiwi</div>
+  <div class="filterDiv fruits">Banana</div>
+  <div class="filterDiv fruits">Lemon</div>
+  <div class="filterDiv animals">Cow</div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+</script>
+</h3>
 <footer>
   <p>Created by Emily Childers, Remy Dahlke, Ashley Kim, James Mahon, Neil Nguyen, Adam Ten Hoeve</p>
 </footer>

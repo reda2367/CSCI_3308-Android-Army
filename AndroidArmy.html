@@ -27,6 +27,34 @@
       </a></span>
 </h1>
 <h2>Android updates, simplified.</h2>
+<h5><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for phones...">
+<ul id="myUL">
+  <li><a href="#">Galaxy S8+</a></li>
+  <li><a href="#">Galaxy J3</a></li>
+  <li><a href="#">Galaxy S6</a></li>
+  <li><a href="#">Pixel 2</a></li>
+  <!-- need php to get phone names -->
+</ul></h5>
+<script>
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
 <div class="boxed">
 <h3> POPULAR MODELS</h3>
 </div>

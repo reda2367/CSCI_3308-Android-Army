@@ -27,28 +27,6 @@
       &#9776;
       </a></span>
 </h1>
-<style>
-.filterDiv {
-  float: center;
-  background-color: #45C555;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.container {
-  margin-top: 50px;
-  overflow: hidden;
-}
-</style>
-<body>
 <!-- need to add php that connects to data
 <?php
 	
@@ -81,7 +59,28 @@
 ?>
 -->
 <h2>Phones</h2>
+<style>
+.filterDiv {
+  float: left;
+  background-color: #45C555;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
 
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 50px;
+  overflow: hidden;
+}
+</style>
+<body>
 <h3>
 <input type="radio" onclick="filterSelection('all')" name="category" checked> Show all<br>
 <input type="radio" onclick="filterSelection('cars')" name="category"> Manufacturer<br>

@@ -62,24 +62,35 @@ input[type=submit]:hover {
 </style>
 </head>
 <body>
-
-<h3>Contact Form</h3>
-
+<style>.error {color: #FF0000;}</style>
+<?php
+// define variables and set to empty values
+$nameErr = $emailErr = $commentErr = "";
+ ?>
+<h2>Contact Form</h2>
+<h4><span class="error">* required field.</span></h4>
+<h3>
 <div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
+  <form action="AndroidArmy_Contact_Action.php" method:"POST">
+    <label for="name">Name</label>
+    <span class="error">* <?php echo $nameErr;?></span>
+	<input type="text" value="<?php echo $name?>" name="name" placeholder="Your name..">
+	<label for="Email">Email</label>
+	<span class="error">* <?php echo $emailErr;?></span>
+	<input type="text" value="<?php echo $email?>" name="email" placeholder="Your email..">
+	<label for="manufacturer">Manufacturer</label>
+	<input type="text" value="<?php echo $manufacturer?>" name="manufacturer" placeholder="Your manufacturer..">
+	<label for="phone">phone</label>
+	<input type="text" value="<?php echo $phone?>" name="phone" placeholder="Your phone..">
+	<label for="version">version</label>
+	<input type="text" value="<?php echo $value?>" name="version" placeholder="Your version..">
+    <label for="comment">Comment</label>
+    <span class="error">* <?php echo $commentErr?></span>
+	<textarea name="comment" placeholder="Enter comment.." style="height:200px"></textarea>
+    <input type="submit" name = "submit" value="Send">
   </form>
 </div>
-</h2>
+</h3>
 <footer>
   <p>Created by Emily Childers, Remy Dahlke, Ashley Kim, James Mahon, Neil Nguyen, Adam Ten Hoeve</p>
 </footer>
@@ -88,3 +99,4 @@ input[type=submit]:hover {
 </body>
 </script>
 </html>
+

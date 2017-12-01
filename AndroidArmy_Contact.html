@@ -58,6 +58,9 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    width: 80%;
+    height: 80%;
+    margin:auto;
 }
 </style>
 </head>
@@ -74,16 +77,16 @@ $nameErr = $emailErr = $commentErr = "";
   <form action="AndroidArmy_Contact_Action.php" method:"POST">
     <label for="name">Name</label>
     <span class="error">* <?php echo $nameErr;?></span>
-	<input type="text" value="<?php echo $name?>" name="name" placeholder="Your name..">
+	<input type="text" name="name" placeholder="Your name..">
 	<label for="Email">Email</label>
 	<span class="error">* <?php echo $emailErr;?></span>
-	<input type="text" value="<?php echo $email?>" name="email" placeholder="Your email..">
+	<input type="text" name="email" placeholder="Your email..">
 	<label for="manufacturer">Manufacturer</label>
-	<input type="text" value="<?php echo $manufacturer?>" name="manufacturer" placeholder="Your manufacturer..">
+	<input type="text" name="manufacturer" placeholder="Your manufacturer..">
 	<label for="phone">phone</label>
-	<input type="text" value="<?php echo $phone?>" name="phone" placeholder="Your phone..">
+	<input type="text" name="phone" placeholder="Your phone..">
 	<label for="version">version</label>
-	<input type="text" value="<?php echo $value?>" name="version" placeholder="Your version..">
+	<input type="text" name="version" placeholder="Your version..">
     <label for="comment">Comment</label>
     <span class="error">* <?php echo $commentErr?></span>
 	<textarea name="comment" placeholder="Enter comment.." style="height:200px"></textarea>
@@ -99,4 +102,3 @@ $nameErr = $emailErr = $commentErr = "";
 </body>
 </script>
 </html>
-

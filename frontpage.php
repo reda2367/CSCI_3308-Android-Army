@@ -65,7 +65,7 @@
          $query2 = "SELECT manufacturer FROM phone WHERE make LIKE '%" . $name . "%' OR manufacturer LIKE '%" . $name . "%'";
          $resultManufacturer = mysqli_query($connection, $query2);
          // Need to update for details page
-          echo "<a href=AndroidArmy_details.php?manufacturer=$resultMake> "
+          echo "<a href=AndroidArmy_details.php?manufacturer=$resultMake> ";
        }
      }
      else

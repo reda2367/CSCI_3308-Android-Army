@@ -5,5 +5,5 @@ Vision: https://github.com/emily-childers/CSCI_3308-Android-Army/blob/master/REA
 Automated Tests: Explanation and Screenshot (see above) <br />
 User Acceptance Tests: 
 1. User will insert data into the database in the submit page and check if the phone page includes the change. <br />
-2. User will insert data into the contact page and administor gets the email <br />
-3. <br />
+2. User will insert data into the contact page and administor gets the email. <br />
+3. User will search for a phone using the search bar and be navigated to the details page. <br />

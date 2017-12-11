@@ -63,7 +63,7 @@
        {
          $name = $_POST['name'];
          //Connect to the database or give error report. 
-         $connection = @mysqli_connect("localhost", "admin", "password123", "AndroidArmy") or die ('I cannot connect to the database because: ' . mysql_error());
+         $connection = @mysqli_connect("localhost", "rdahlke", "10405611", "project") or die ('I cannot connect to the database because: ' . mysql_error());
          //query to find phone in database
          $query = "SELECT make FROM phone WHERE make LIKE '%" . $name . "%' OR manufacturer LIKE '%" . $name . "%'";
          $resultName = mysqli_query($connection, $query);

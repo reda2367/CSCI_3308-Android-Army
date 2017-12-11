@@ -1,7 +1,7 @@
 <?php
 // Obtain a connection object by connecting to the db
 
-$connection = @mysqli_connect ('localhost', 'emily', 'password', 'androidarmy');
+$connection = @mysqli_connect ('localhost', 'rdahlke', '10405611', 'project');
 
 
 var_dump($_REQUEST);

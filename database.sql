@@ -20,11 +20,11 @@ insert into manufacturer(id, manufacturer, make, version, OSRelease, security) v
 (4,  'OnePlus', '2', '6.0.1 Marshmallow', '05-2016','06-2017'),
 (5,  'Google', 'Pixel 2', '6.0.0 Oreo', '10-2016','10-2017');
 
-insert into version(id, name, versionID) values
-(1, 'Lollipop', '5.0'), 
-(2, 'Marshmallow', '6.0'), 
-(3, 'Nougat', '7.0'),
-(4, 'Nougat', '7.1'), 
-(5, 'Oreo', '8.0'),
-(6, 'Oreo', '8.1');
+insert into version(id, version_name) values
+(1, 'Lollipop 5.0'), 
+(2, 'Marshmallow 6.0'), 
+(3, 'Nougat 7.0'),
+(4, 'Nougat 7.1'), 
+(5, 'Oreo 8.0'),
+(6, 'Oreo 8.1');
 

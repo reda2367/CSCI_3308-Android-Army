@@ -1,9 +1,9 @@
 /*Sliding menu based off of tutorial by w3schools.com */
 #logo {
-  text-align: center;
+  text-align: center; /*Lines the logo into the center of the webpage*/
 }
 * {
-  font-family: helvetica,sans-serif;
+  font-family: helvetica,sans-serif; /*Sets font for all parts of the webpage*/
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 
 h1 {
   float: left;
-  margin-top: -90px;
+  margin-top: -90px; /*Positioning for aesthetics*/
 
 
 }
@@ -35,10 +35,10 @@ h3 {
   margin-top: 100px;
   display: inline;
   text-align: center;
-  color: #45BF55
+  color: #45BF55  
 }
 
-.boxed {
+.boxed { /*For the sliding menu*/
   text-align: center;
   border: 1px solid #45BF55;
   border-radius: 25px;
@@ -57,7 +57,7 @@ h4 {
   text-align: center;
   color: white;
 }
-.boxed2{
+.boxed2{ /*Sliding menu continued*/
   text-align: center;
   border: 1px solid #45BF55;
   border-radius: 25px;
@@ -69,7 +69,7 @@ h4 {
   background: #45BF55
   
 }
-.boxed2 textarea:hover {
+.boxed2 textarea:hover { /* makes button change when hovered over*/
   opacity: .5;
 }
 

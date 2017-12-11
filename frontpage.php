@@ -34,7 +34,7 @@
        <div id="mySidenav" class="sidenav">
          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
          <a href="AndroidArmy_About.html">ABOUT</a>
-         <a href="AndroidArmy_Phones.html">PHONES</a>
+         <a href="AndroidArmy_Phones.php">PHONES</a>
          <a href="AndroidArmy_Submit.html">SUBMIT</a>
          <a href="#">CONTACT</a>
        </div>

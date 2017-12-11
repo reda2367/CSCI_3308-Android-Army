@@ -50,6 +50,8 @@
    <input type="submit" name="submit" value="Search">
  </form>
  <?php
+  // Beginning of search bar
+  // A bunch of checks to make sure input is valid
    if(isset($_POST['submit']))
    {
      if(isset($_GET['go']))
@@ -57,14 +59,14 @@
        if(preg_match("^/[A-Za-z0-9]+/", $_POST['name']))
        {
          $name = $_POST['name'];
-         //Connect to the database. I'm not sure how to do the username and password part though.
+         //Connect to the database or give error report. 
          $connection = @mysqli_connect("localhost", "<username>", "<password>", "AndroidArmy") or die ('I cannot connect to the database because: ' . mysql_error());
-         //query to find things in database
+         //query to find phone in database
          $query = "SELECT make FROM phone WHERE make LIKE '%" . $name . "%' OR manufacturer LIKE '%" . $name . "%'";
          $resultName = mysqli_query($connection, $query);
+        //Second query to get the manufacturer 
          $query2 = "SELECT manufacturer FROM phone WHERE make LIKE '%" . $name . "%' OR manufacturer LIKE '%" . $name . "%'";
          $resultManufacturer = mysqli_query($connection, $query2);
-         // Need to update for details page
           echo "<a href=AndroidArmy_details.php?manufacturer=$resultMake> ";
        }
      }

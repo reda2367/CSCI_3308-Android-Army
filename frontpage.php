@@ -8,13 +8,14 @@
    <link rel="icon" href="https://i.imgur.com/BxSspbo.png">
    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
    <title> Update Depot </title>
-   <div id="logo">
+   <div id="logo"> <!-- display logo -->
      <img src="https://i.imgur.com/BxSspbo.png" width="125" height="125" alt="Logo">
    </div>
  </head>
  <body>
 
  <?php
+   // error reporting for php
    error_reporting(-1);
    ini_set('dipslay errors', 1);
    $connection = @mysqli_connect("localhost", "admin", "password123", "AndroidArmy");
@@ -29,7 +30,7 @@
    }
  ?>
 
- <h1>
+ <h1> <!--side bar -->
        <div id="mySidenav" class="sidenav">
          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
          <a href="AndroidArmy_About.html">ABOUT</a>
@@ -44,13 +45,15 @@
        </a></span>
  </h1>
  <h2>Android updates, simplified.</h2>
+  
+  
  <!--  Start of the search bar -->
  <form method="post" action="search.php?go" id="searchform">
    <input type="text" name="name" placeholder="enter a phone">
    <input type="submit" name="submit" value="Search">
  </form>
  <?php
-  // Beginning of search bar
+  // Beginning of search bar php
   // A bunch of checks to make sure input is valid
    if(isset($_POST['submit']))
    {
@@ -60,7 +63,7 @@
        {
          $name = $_POST['name'];
          //Connect to the database or give error report. 
-         $connection = @mysqli_connect("localhost", "<username>", "<password>", "AndroidArmy") or die ('I cannot connect to the database because: ' . mysql_error());
+         $connection = @mysqli_connect("localhost", "admin", "password123", "AndroidArmy") or die ('I cannot connect to the database because: ' . mysql_error());
          //query to find phone in database
          $query = "SELECT make FROM phone WHERE make LIKE '%" . $name . "%' OR manufacturer LIKE '%" . $name . "%'";
          $resultName = mysqli_query($connection, $query);

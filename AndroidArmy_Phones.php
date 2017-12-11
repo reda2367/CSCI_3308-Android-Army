@@ -26,36 +26,15 @@
       &#9776;
       </a></span>
 </h1>
-<!-- need to add php that connects to data
-<?php
-	
-	$connection = @mysqli_connect(localhost, root, bookekgom, db);
-	/*$query ="SELECT * FROM phone";
-	$result = mysqli_query($connection,$query);
-	
-	echo "<table>
-                <tr>
-                <th>id</th>
-                <th>name</th>
-                <th>qty</th>
-                <th>price</th>
-                <th></th>
-                </tr>";
-	while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM))
-	{
-		echo "<tr>";
-      	        echo"<td>" .$row[0]."</td><td>".$row[1]."</td><td>".$row[2]."</td><td>".$row[3]."</td><td>".$row[4]."</td><td>".$row[5]."</td>";
-		echo "</tr>";
-	}
-	echo "</table>";
-	mysql_free_result($result);
-	mysql_close($connection);*/
-	
-?>
+<!-- 
 -->
 <h2>Phones</h2>
 
-<h5> <i> 
+<h5> 
+<!--
+info for page
+-->
+<i> 
 Every entry in our database. <br>
 <strong>Feel free to submit an unlisted update! </strong> <br>
 ~Format~<br>
@@ -82,18 +61,16 @@ $resultset = mysqli_query($connection,$query);
 $count = 0;
 
 
-while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM)) {
+while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM)) {//loops through rows in database
 	echo "<b><p><span>";
-	echo $row[0]." ".$row[1].", ".$row[2].", ".$row[3].", ".$row[4]."	";
+	echo $row[0]." ".$row[1].", ".$row[2].", ".$row[3].", ".$row[4]."	";//prints rows in database
 	echo "</span></p></b>";
-	//echo "<input type=\"submit\" class=\"button\" name=\"".$row[0]."\" value=\"delete\"/>"; 
-	//echo "<br>";
-	$count = $count + 1;
+	$count = $count + 1;//counts number of phones
 
 }
 
 
-	echo "<br><b># of phones: ";
+	echo "<br><b># of phones: ";//prints number of phones
 	echo "<big>";
 	echo $count;
 	echo "</big>";
@@ -122,60 +99,7 @@ while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM)) {
 </style>
 <body>
 <!-- 
-<h3>
-<input type="radio" onclick="filterSelection('all')" name="category" checked> Show all<br>
-<input type="radio" onclick="filterSelection('cars')" name="category"> Manufacturer<br>
-<input type="radio" onclick="filterSelection('animals')" name="category"> Make <br>
-<input type="radio" onclick="filterSelection('fruits')" name="category"> Version<br>
 
-<div class="container">
-  <div class="filterDiv cars">BMW</div>
-  <div class="filterDiv colors fruits">Orange</div>
-  <div class="filterDiv cars">Volvo</div>
-  <div class="filterDiv colors">Red</div>
-  <div class="filterDiv cars animals">Mustang</div>
-  <div class="filterDiv colors">Blue</div>
-  <div class="filterDiv animals">Cat</div>
-  <div class="filterDiv animals">Dog</div>
-  <div class="filterDiv fruits">Melon</div>
-  <div class="filterDiv fruits animals">Kiwi</div>
-  <div class="filterDiv fruits">Banana</div>
-  <div class="filterDiv fruits">Lemon</div>
-  <div class="filterDiv animals">Cow</div>
-</div>
-
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-</script>
-</h3>
 -->
 <footer>
   <p>Created by Emily Childers, Remy Dahlke, Ashley Kim, James Mahon, Neil Nguyen, Adam Ten Hoeve</p>

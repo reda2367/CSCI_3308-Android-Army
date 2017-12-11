@@ -17,7 +17,7 @@ h1 {
   margin-top: -90px;
 }
 
-h2{
+h2{/*the title of the page*/
 	text-align: center;
 	font-family: helvetica,sans-serif;
 	font-size: 56px;
@@ -29,11 +29,11 @@ h3{
 	font-size: 18px;
 }
 
-big {
+big {/*displays the count of phones*/
 	font-size: 50px;
 }
 
-#mainDiv {
+#mainDiv {/*the main area of all the entries*/
 	font-size: 250%;
 	float: center;
 	/*margin-top: 100px;
@@ -47,13 +47,13 @@ p {
 
 }
 
-h5 {
+h5 {/*the info for the page*/
 	text-align: center;
 	font-family: helvetica,sans-serif;
 	font-size: 28px;
 }
 
-span:hover {
+span:hover {/*changes color when you hover mouse over entry*/
 	background-color: #5FD96F;
 } 
 

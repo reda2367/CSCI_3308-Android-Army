@@ -16,7 +16,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="frontpage.php">HOME</a>
         <a href="AndroidArmy_About.hmtl">ABOUT</a>
-        <a href="AndroidArmy_Phones.html">PHONES</a>
+        <a href="AndroidArmy_Phones.php">PHONES</a>
         <a href="AndroidArmy_Submit.html">SUBMIT</a>
         <a href="AndroidArmy_Contact.html">CONTACT</a>
       </div>
@@ -32,7 +32,7 @@
 
 <h5> 
 <!--
-info for page
+the description of what the page contains
 -->
 <i> 
 Every entry in our database. <br>

@@ -28,6 +28,10 @@ h2 {
   font-family: 'Comfortaa', sans-serif;
 }
 
+#page-wrap {
+     width: 800px;
+     margin: 0 auto;
+}
 
 
 h3 {
@@ -35,7 +39,7 @@ h3 {
   margin-top: 100px;
   display: inline;
   text-align: center;
-  color: #45BF55  
+  color: #45BF55
 }
 
 .boxed { /*For the sliding menu*/
@@ -67,7 +71,7 @@ h4 {
   outline-offset: 0px;
   margin-top: 175px;
   background: #45BF55
-  
+
 }
 .boxed2 textarea:hover { /* makes button change when hovered over*/
   opacity: .5;

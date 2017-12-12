@@ -28,18 +28,6 @@
 </h1>
 <!-- 
 -->
-<h2>Phones</h2>
-<style>
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 80%;
-    height: auto;
-    margin:auto;
-}
-</style>
-<div class = "container">
 <h5> 
 <!--
 the description of what the page contains
@@ -55,7 +43,7 @@ Make Model, O.S. Version Name, O.S. Release Date, Security
 <br>
 <?php
 // Obtain a connection object by connecting to the db
-$connection = @mysqli_connect("localhost", "root", "moo", "project");
+$connection = @mysqli_connect("localhost", "rdahlke", "10405611", "project");
 // please fill these parameters with the actual data
 if(mysqli_connect_errno())
 {
@@ -70,20 +58,14 @@ $query = "Select manufacturer, make, version, OSRelease, security from phone";
 $resultset = mysqli_query($connection,$query);
 $count = 0;
 
-echo "<div id='links'>";
+
 while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM)) {//loops through rows in database
-	echo "<b><p>";
-	echo "<a href='AndroidArmy_Details.php?manufacturer=$row[0]&make=$row[1]'>";
-	echo $row[0];
-	echo ' ';
-	echo $row[1];
-	echo ', '.$row[2].', '.$row[3].', '.$row[4].'	';//prints rows in database
-	echo "</a>";
-	echo "</p></b>";
+	echo "<b><p><span>";
+	echo $row[0]." ".$row[1].", ".$row[2].", ".$row[3].", ".$row[4]."	";//prints rows in database
+	echo "</span></p></b>";
 	$count = $count + 1;//counts number of phones
 
 }
-echo "</div>";
 
 
 	echo "<br><b># of phones: ";//prints number of phones

@@ -1,24 +1,6 @@
 <!DOCTYPE html>
 <html>
 <div id="main">
-
-<h9>
-<form action="action_page.php" method:"POST">
-
-  <div class="container">
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <input type="checkbox" checked="checked"> Remember me
-  </div>
-</form>
-</h9>
-
-
 <head>
   <link rel="stylesheet" href="AndroidArmy.css"> <!-- links to css page -->
   <link rel="icon" href="https://i.imgur.com/BxSspbo.png"> <!-- link to icon image used, made in Adobe Illustrator-->
@@ -46,14 +28,62 @@
       </a></span>
 </h1>
 <h2>Android updates, simplified.</h2>
+<style>
+input[type=text] {
+    width: 800px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    /*background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;*/
+    padding: 12px 20px 12px 40px;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+</style>
+  <div id="page-wrap">
+          <form action="AndroidArmy_Search.php" method = "POST">
+        <input type="text" name="phone"  placeholder="Search for phones...">
+        <!--<input type="submit" name="submit"  value="Send" >
+          </form>
+<!--
 <div id="page-wrap">
 <h5><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for phones...">
 <ul id="myUL">
-  <li><a href="#">Galaxy S8+</a></li>
+<-->
+  <!-- <li><a href="#">Galaxy S8+</a></li>
   <li><a href="#">Galaxy J3</a></li>
   <li><a href="#">Galaxy S6</a></li>
   <li><a href="#">Pixel 2</a></li>
-  <!-- need php to get phone names -->
+  need php to get phone names -->
+  <!--
+  <php
+  echo "Goodbye";
+  $connection = @mysqli_connect("localhost", "admin", "password123", "AndroidArmy");
+  if(mysqli_connect_errno())
+  {
+  	echo "<h4>Failed to connect to MySQL:
+  	</h4>".mysqli_connect_error();
+  }
+  else
+  {
+    echo "<h4>Successfully connected to MySQL: </h4>";
+  }
+
+  $query = "select make from phones";
+  $result = mysqli_query($connection, $query);
+  //echo "<p>HELLO</p>";
+  while ($row = mysqli_fetch_array($result, MYSQLI_NUM))
+  {
+    echo "hello";
+  }
+  >-->
 </ul></h5>
 <script>
 function myFunction() { //Embedded JS

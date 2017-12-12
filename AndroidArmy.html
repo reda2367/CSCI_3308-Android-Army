@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+
+
 <div id="main">
 <head>
   <link rel="stylesheet" href="AndroidArmy.css"> <!-- links to css page -->
@@ -12,13 +14,14 @@
 </head>
 <body>
 
+
 <h1>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!--JS to create a button that links to other pages-->
         <a href="AndroidArmy.html">HOME</a>
         <a href="AndroidArmy_About.html">ABOUT</a>
         <a href="AndroidArmy_Phones.php">PHONES</a>
-        <a href="AndroidArmy_Submit.html">SUBMIT</a>
+        <a href="AndroidArmy_Submit.php">SUBMIT</a>
         <a href="AndroidArmy_Contact.html">CONTACT</a>
       </div>
 
@@ -28,6 +31,7 @@
       </a></span>
 </h1>
 <h2>Android updates, simplified.</h2>
+
 <style>
 input[type=text] {
     width: 800px;
@@ -42,7 +46,6 @@ input[type=text] {
     background-repeat: no-repeat;*/
     padding: 12px 20px 12px 40px;
 }
-
 input[type=text]:focus {
     width: 100%;
 }
@@ -75,7 +78,6 @@ input[type=text]:focus {
   {
     echo "<h4>Successfully connected to MySQL: </h4>";
   }
-
   $query = "select make from phones";
   $result = mysqli_query($connection, $query);
   //echo "<p>HELLO</p>";
@@ -93,7 +95,6 @@ function myFunction() { //Embedded JS
     filter = input.value.toUpperCase();
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName('li');
-
     // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];

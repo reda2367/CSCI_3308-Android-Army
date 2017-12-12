@@ -14,7 +14,6 @@
 <body>
 
 <h1>
-	<!-- links to different pages -->
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="AndroidArmy.html">HOME</a>
@@ -29,8 +28,6 @@
       &#9776;
       </a></span>
 </h1>
-<h2>
-<!-- design for the submit box -->
 <style>
 input[type=text], select, textarea {
     width: 100%;
@@ -65,37 +62,19 @@ input[type=submit]:hover {
     margin:auto;
 }
 </style>
-</head>
-<body>
-<style>.error {color: #FF0000;}</style>
-<?php
-// define variables and set to empty values
-$nameErr = $emailErr = $commentErr = "";
- ?>
-<h2>Contact Form</h2>
-<h4><span class="error">* required field.</span></h4>
-<h3> <!-- gets user input(data) and sends it to AndroidArmy_Contact_Action.php -->
-<div class="container">
-  <form action="AndroidArmy_Contact_Action.php" method:"POST">
-    <label for="name">Name</label>
-    <span class="error">* <?php echo $nameErr;?></span>
-	<input type="text" name="name" placeholder="Your name..">
-	<label for="Email">Email</label>
-	<span class="error">* <?php echo $emailErr;?></span>
-	<input type="text" name="email" placeholder="Your email..">
-	<label for="manufacturer">Manufacturer</label>
-	<input type="text" name="manufacturer" placeholder="Your manufacturer..">
-	<label for="phone">phone</label>
-	<input type="text" name="phone" placeholder="Your phone..">
-	<label for="version">version</label>
-	<input type="text" name="version" placeholder="Your version..">
-    <label for="comment">Comment</label>
-    <span class="error">* <?php echo $commentErr?></span>
-	<textarea name="comment" placeholder="Enter comment.." style="height:200px"></textarea>
-    <input type="submit" name = "submit" value="Send">
-  </form>
-</div>
-</h3>
+<div class = "container">
+<form action="SQLInsertHandler.php" method: "POST">
+  <p>Id:&nbsp <input type="text" name="id" size="10" maxlength="11" /></p>
+  <p>Manufacturer:&nbsp <input type="text" name="manufacturer" size="10" maxlength="11" /></p>
+  <p>Make:&nbsp <input type="text" name="make" size="10" maxlength="20" /></p>
+  <p>Version:&nbsp <input type="text" name="version" size="10" maxlength="30"
+/></p>
+  <p>OSRelease:&nbsp <input type="text" name="OSRelease" size="10" maxlength="30"
+/></p>
+  <p>Security:&nbsp <input type="text" name="security" size="10" maxlength="30"
+/></p>
+  <input type="submit" value="Add item" /> &nbsp <input type="reset" />
+</form>
 <footer>
   <p>Created by Emily Childers, Remy Dahlke, Ashley Kim, James Mahon, Neil Nguyen, Adam Ten Hoeve</p>
 </footer>

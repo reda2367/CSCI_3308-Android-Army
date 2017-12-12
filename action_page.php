@@ -7,7 +7,7 @@
 	document.write("hi");
 	$(document).ready(function(){
 		$(".button").click(function(){
-			window.location.replace("http://localhost:8000/AndroidArmy.php");
+			window.location.replace("http://localhost:8000/AndroidArmy.html");
 			var clickBtnName = $(this).attr('name');
 			var ajaxurl = 'http://localhost:8000/SQLDeleteHandler.php';
 			var data = {'Id': clickBtnName};

@@ -29,17 +29,7 @@
 <!-- 
 -->
 <h2>Phones</h2>
-<style>
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 80%;
-    height: auto;
-    margin:auto;
-}
-</style>
-<div class = "container">
+
 <h5> 
 <!--
 the description of what the page contains
@@ -77,7 +67,6 @@ while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM)) {//loops through rows 
 	echo $row[0];
 	echo ' ';
 	echo $row[1];
-	echo ', '.$row[2].', '.$row[3].', '.$row[4].'	';//prints rows in database
 	echo "</a>";
 	echo "</p></b>";
 	$count = $count + 1;//counts number of phones

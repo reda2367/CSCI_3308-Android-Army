@@ -28,6 +28,7 @@
 </h1>
 <!-- 
 -->
+
 <h2>Phones</h2>
 
 <h5> 
@@ -45,7 +46,7 @@ Make Model, O.S. Version Name, O.S. Release Date, Security
 <br>
 <?php
 // Obtain a connection object by connecting to the db
-$connection = @mysqli_connect("localhost", "root", "moo", "project");
+$connection = @mysqli_connect("localhost", "rdahlke", "10405611", "project");
 // please fill these parameters with the actual data
 if(mysqli_connect_errno())
 {
@@ -60,8 +61,9 @@ $query = "Select manufacturer, make, version, OSRelease, security from phone";
 $resultset = mysqli_query($connection,$query);
 $count = 0;
 
-echo "<div id='links'>";
+
 while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM)) {//loops through rows in database
+
 	echo "<b><p>";
 	echo "<a href='AndroidArmy_Details.php?manufacturer=$row[0]&make=$row[1]'>";
 	echo $row[0];
@@ -69,10 +71,10 @@ while ($row = mysqli_fetch_array($resultset, MYSQLI_NUM)) {//loops through rows 
 	echo $row[1];
 	echo "</a>";
 	echo "</p></b>";
+
 	$count = $count + 1;//counts number of phones
 
 }
-echo "</div>";
 
 
 	echo "<br><b># of phones: ";//prints number of phones

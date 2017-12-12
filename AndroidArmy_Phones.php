@@ -14,7 +14,7 @@
 <h1>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="frontpage.php">HOME</a>
+        <a href="AndroidArmy.html">HOME</a>
         <a href="AndroidArmy_About.hmtl">ABOUT</a>
         <a href="AndroidArmy_Phones.php">PHONES</a>
         <a href="AndroidArmy_Submit.php">SUBMIT</a>

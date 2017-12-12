@@ -17,7 +17,7 @@
         <a href="frontpage.php">HOME</a>
         <a href="AndroidArmy_About.hmtl">ABOUT</a>
         <a href="AndroidArmy_Phones.php">PHONES</a>
-        <a href="AndroidArmy_Submit.html">SUBMIT</a>
+        <a href="AndroidArmy_Submit.php">SUBMIT</a>
         <a href="AndroidArmy_Contact.html">CONTACT</a>
       </div>
 
@@ -29,7 +29,17 @@
 <!-- 
 -->
 <h2>Phones</h2>
-
+<style>
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 80%;
+    height: auto;
+    margin:auto;
+}
+</style>
+<div class = "container">
 <h5> 
 <!--
 the description of what the page contains
